@@ -2,7 +2,7 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
 import Image from "next/image";
-import deved from '../public/Marshall.jpg'
+import marshall from '../public/Marshall.jpg'
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
@@ -28,7 +28,7 @@ export default function Home() {
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-emerald-500">developedbyed</h1>
+            <h1 className="text-xl font-burtons dark:text-emerald-500">starcaim</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-gray-200"/>
@@ -42,34 +42,32 @@ export default function Home() {
             <h2 className="text-5xl py2 text-teal-600 font-medium md:text-6xl">Marshall Bohn</h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-emerald-500">Developer and designer.</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              This is my portfolio! You can find many of my projects below, or my resume in the top right!
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+          {/* <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
-          </div>
+          </div> */}
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={deved} layout="fill" objectFit="cover" />
+            <Image src={marshall} layout="fill" objectFit="cover" />
           </div>
         </section>
         
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-emerald-500">Services I offer</h3>
+            <h3 className="text-3xl py-1 dark:text-emerald-500">About Marshall</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className=" text-teal-500"> startups </span>
-              and collaborated with talented people to create digital products
-              for both business and consumer use.
+              Hello everyone, my name is Marshall, but you already knew that, I am currently completing my third year at
+              <span className="text-teal-500"> Canadian Valley Technology Center</span>
+              , and I will be starting college at <span className=" text-teal-500"> Redlands Community College </span>
+              next school year.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design, 
-              programming and teaching.
+              I have learned a variety of skills from Canadian Valley Technology Center, such as 2 years of
+              <span className=" text-teal-500"> Computer Information Systems</span>, and one year of
+              <span className=" text-teal-500"> Computer Programming</span>.
             </p>
           </div>
           <div className="lg:flex gap-10">
